@@ -8,10 +8,10 @@ export default function GlasgowPage() {
 
   return (
     <div>
-      <section className="mesh text-cream-50">
+      <section className="mesh">
         <div className="mx-auto max-w-7xl px-4 py-16 lg:px-6 lg:py-24">
           <h1 className="max-w-4xl font-display text-4xl md:text-6xl">24/7 emergency boiler repair in Glasgow</h1>
-          <p className="mt-5 max-w-3xl text-lg text-cream-200/90">
+          <p className="mt-5 max-w-3xl text-lg text-ink-700">
             No heat or hot water? BeSafe 24-7 provides fast, reliable boiler repair across Glasgow — day or night. Our Gas Safe-registered engineers ({site.gasSafe}) diagnose and fix faults quickly, from pressure drops and ignition issues to leaks and error codes.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
