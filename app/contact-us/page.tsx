@@ -6,10 +6,10 @@ import { QuoteForm } from "@/components/QuoteForm";
 export default function ContactPage() {
   return (
     <div>
-      <section className="mesh text-cream-50">
+      <section className="mesh">
         <div className="mx-auto max-w-7xl px-4 py-16 lg:px-6">
           <h1 className="font-display text-4xl md:text-6xl">Contact BeSafe 24-7</h1>
-          <p className="mt-4 max-w-2xl text-lg text-cream-200/90">
+          <p className="mt-4 max-w-2xl text-lg text-ink-700">
             Need help now? Call {site.phone} or send a message — our Gas Safe engineers respond quickly with clear prices before work begins.
           </p>
         </div>

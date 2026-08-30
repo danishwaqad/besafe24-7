@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --ink: #0a1824;
-  --ember: #e8a54b;
+  --ink: #44403c;
+  --ember: #e56a32;
+  --sea: #0f7a72;
 }
 
 html {
@@ -12,39 +13,66 @@ html {
 }
 
 body {
-  @apply bg-cream-50 text-ink-900 antialiased;
+  background: #fffcf8;
+  color: #44403c;
+  -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
-  background: #e8a54b;
-  color: #061018;
-}
-
-.grain {
-  background-image: radial-gradient(1200px 500px at 10% -10%, rgba(232, 165, 75, 0.18), transparent 50%),
-    radial-gradient(800px 400px at 90% 10%, rgba(61, 139, 122, 0.12), transparent 45%);
+  background: #e56a32;
+  color: #fff;
 }
 
 .mesh {
   background:
-    linear-gradient(180deg, rgba(6, 16, 24, 0.55), rgba(6, 16, 24, 0.88)),
-    radial-gradient(circle at 20% 20%, rgba(232, 165, 75, 0.35), transparent 40%),
-    radial-gradient(circle at 80% 80%, rgba(61, 139, 122, 0.28), transparent 42%),
-    #0a1824;
+    radial-gradient(circle at 12% 18%, rgba(229, 106, 50, 0.18), transparent 36%),
+    radial-gradient(circle at 88% 8%, rgba(15, 122, 114, 0.16), transparent 34%),
+    linear-gradient(180deg, #eef8f5 0%, #fff8f1 48%, #fde8d8 100%);
 }
 
 .card-lift {
-  @apply transition duration-300 hover:-translate-y-1 hover:shadow-glow;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px -18px rgba(229, 106, 50, 0.4);
+}
+
+.btn-ember,
+.btn-outline,
+.btn-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 
 .btn-ember {
-  @apply inline-flex items-center justify-center gap-2 rounded-full bg-ember-400 px-5 py-3 text-sm font-semibold text-ink-950 shadow-glow transition hover:bg-ember-300;
+  background: #e56a32;
+  color: #fff;
+  box-shadow: 0 18px 40px -18px rgba(229, 106, 50, 0.4);
+}
+.btn-ember:hover {
+  background: #c94a1c;
 }
 
 .btn-outline {
-  @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10;
+  border: 1px solid #d5efe8;
+  background: #fff;
+  color: #0c635c;
+}
+.btn-outline:hover {
+  background: #eef8f5;
 }
 
 .btn-dark {
-  @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink-900 px-5 py-3 text-sm font-semibold text-cream-50 transition hover:bg-ink-800;
+  background: #0c635c;
+  color: #fff;
+}
+.btn-dark:hover {
+  background: #0f7a72;
 }

@@ -8,13 +8,13 @@ export default function CheapBoilerRepairPage() {
 
   return (
     <div>
-      <section className="mesh text-cream-50">
+      <section className="mesh">
         <div className="mx-auto max-w-7xl px-4 py-16 lg:px-6 lg:py-24">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-ember-400">Clear prices · No call-out surprises</p>
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-sea-700">Clear prices · No call-out surprises</p>
           <h1 className="mt-3 max-w-4xl font-display text-4xl md:text-6xl">
             Emergency boiler repair in Glasgow — 24/7
           </h1>
-          <p className="mt-5 max-w-2xl text-lg text-cream-200/90">
+          <p className="mt-5 max-w-2xl text-lg text-ink-700">
             Fast, local service from Gas Safe engineers. Same-day repairs. You approve an itemised price before work starts — no hidden extras.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
