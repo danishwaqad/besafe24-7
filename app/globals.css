@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0a1824;
+  --ember: #e8a54b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cream-50 text-ink-900 antialiased;
+}
+
+::selection {
+  background: #e8a54b;
+  color: #061018;
+}
+
+.grain {
+  background-image: radial-gradient(1200px 500px at 10% -10%, rgba(232, 165, 75, 0.18), transparent 50%),
+    radial-gradient(800px 400px at 90% 10%, rgba(61, 139, 122, 0.12), transparent 45%);
+}
+
+.mesh {
+  background:
+    linear-gradient(180deg, rgba(6, 16, 24, 0.55), rgba(6, 16, 24, 0.88)),
+    radial-gradient(circle at 20% 20%, rgba(232, 165, 75, 0.35), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(61, 139, 122, 0.28), transparent 42%),
+    #0a1824;
+}
+
+.card-lift {
+  @apply transition duration-300 hover:-translate-y-1 hover:shadow-glow;
+}
+
+.btn-ember {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-ember-400 px-5 py-3 text-sm font-semibold text-ink-950 shadow-glow transition hover:bg-ember-300;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/10;
+}
+
+.btn-dark {
+  @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink-900 px-5 py-3 text-sm font-semibold text-cream-50 transition hover:bg-ink-800;
+}
