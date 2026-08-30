@@ -14,10 +14,10 @@ export function Header() {
   const { openQuote } = useQuote();
 
   return (
-    <header className="sticky top-0 z-40 border-b border-ink-900/10 bg-cream-50/90 backdrop-blur-md">
+    <header className="sticky top-0 z-40 border-b border-sea-800/10 bg-white/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 lg:px-6">
         <Link href="/" className="flex items-center gap-3">
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-ink-900 text-ember-400">
+          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-sea-700 text-white">
             <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.8">
               <path d="M12 3c2 4 6 6.5 6 10a6 6 0 1 1-12 0c0-3.5 4-6 6-10Z" />
             </svg>

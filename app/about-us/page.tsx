@@ -8,13 +8,13 @@ export default function AboutPage() {
 
   return (
     <div>
-      <section className="mesh text-cream-50">
+      <section className="mesh">
         <div className="mx-auto max-w-7xl px-4 py-16 lg:px-6 lg:py-24">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-ember-400">About BeSafe 24-7</p>
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-sea-700">About BeSafe 24-7</p>
           <h1 className="mt-3 max-w-4xl font-display text-4xl md:text-6xl">
             Trusted boiler & heating engineers in Glasgow
           </h1>
-          <p className="mt-5 max-w-2xl text-lg text-cream-200/90">
+          <p className="mt-5 max-w-2xl text-lg text-ink-700">
             BeSafe 24-7 is a Glasgow-based team of Gas Safe Registered engineers helping homeowners with boiler repairs, servicing/CP12, new installs, plumbing, gas and drainage. We prioritise safety, tidy work and clear pricing — so you always know where you stand.
           </p>
         </div>
@@ -40,7 +40,7 @@ export default function AboutPage() {
         </ul>
       </section>
 
-      <section className="bg-ink-900 text-cream-50">
+      <section className="bg-sea-50">
         <div className="mx-auto grid max-w-7xl gap-4 px-4 py-16 sm:grid-cols-2 lg:grid-cols-4 lg:px-6">
           {[
             ["24/7", "Emergency availability"],
@@ -48,8 +48,8 @@ export default function AboutPage() {
             ["2 options", "AM/PM appointments"],
             ["12 months", "Workmanship guarantee"],
           ].map(([k, v]) => (
-            <div key={v} className="rounded-3xl border border-white/10 p-6">
-              <p className="font-display text-3xl text-ember-400">{k}</p>
+            <div key={v} className="rounded-3xl border border-sea-800/10 bg-white p-6">
+              <p className="font-display text-3xl text-sea-700">{k}</p>
               <p className="mt-2 text-sm">{v}</p>
             </div>
           ))}

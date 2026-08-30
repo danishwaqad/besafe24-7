@@ -116,7 +116,7 @@ export function QuoteForm({ defaultJobType = "Boiler Repair", onDone }: Props) {
         </label>
         <label className="text-sm font-semibold">
           Photo (PDF, DOC, JPG, PNG)
-          <input name="photo" type="file" accept=".pdf,.doc,.docx,.xls,.csv,.jpg,.jpeg,.png,.gif" className="mt-1 w-full rounded-xl border border-ink-900/10 bg-white px-3 py-2.5 font-normal file:mr-3 file:rounded-full file:border-0 file:bg-ink-900 file:px-3 file:py-1 file:text-xs file:text-white" />
+          <input name="photo" type="file" accept=".pdf,.doc,.docx,.xls,.csv,.jpg,.jpeg,.png,.gif" className="mt-1 w-full rounded-xl border border-ink-900/10 bg-white px-3 py-2.5 font-normal file:mr-3 file:rounded-full file:border-0 file:bg-sea-800 file:px-3 file:py-1 file:text-xs file:text-white" />
         </label>
       </div>
       <label className="text-sm font-semibold">

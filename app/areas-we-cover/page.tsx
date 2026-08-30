@@ -10,10 +10,10 @@ export default function AreasPage() {
 
   return (
     <div>
-      <section className="mesh text-cream-50">
+      <section className="mesh">
         <div className="mx-auto max-w-7xl px-4 py-16 lg:px-6">
           <h1 className="font-display text-4xl md:text-6xl">Areas we cover</h1>
-          <p className="mt-4 max-w-3xl text-lg text-cream-200/90">
+          <p className="mt-4 max-w-3xl text-lg text-ink-700">
             Fast, local help when your heating stops. BeSafe 24-7 delivers same-day boiler repair across Greater Glasgow and surrounding towns. Prefer WhatsApp? We’ll reply with two booking options.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">

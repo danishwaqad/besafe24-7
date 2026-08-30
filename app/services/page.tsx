@@ -39,13 +39,13 @@ export default function ServicesPage() {
 
   return (
     <div>
-      <section className="mesh text-cream-50">
+      <section className="mesh">
         <div className="mx-auto max-w-7xl px-4 py-16 lg:px-6 lg:py-24">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-ember-400">Heating · Plumbing · Gas · Drainage</p>
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-sea-700">Heating · Plumbing · Gas · Drainage</p>
           <h1 className="mt-3 max-w-4xl font-display text-4xl md:text-6xl">
             Heating, plumbing, gas & drainage services in Glasgow
           </h1>
-          <p className="mt-5 max-w-2xl text-lg text-cream-200/90">
+          <p className="mt-5 max-w-2xl text-lg text-ink-700">
             From emergency boiler repairs to annual servicing and new installs — plus plumbing, gas and drainage — our local team keeps your home safe, warm and compliant.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
@@ -80,9 +80,9 @@ export default function ServicesPage() {
             ["Diagnose", "The engineer arrives with stocked parts, confirms the fault and price."],
             ["Fix & safety", "Repair completed, then gas tightness, flue and combustion checks, controls demo and documentation."],
           ].map(([t, d]) => (
-            <article key={t} className="rounded-3xl bg-ink-900 p-6 text-cream-50">
+            <article key={t} className="rounded-3xl bg-sea-50 p-6">
               <h3 className="font-display text-2xl">{t}</h3>
-              <p className="mt-2 text-sm text-cream-200/80">{d}</p>
+              <p className="mt-2 text-sm text-ink-700">{d}</p>
             </article>
           ))}
         </div>
