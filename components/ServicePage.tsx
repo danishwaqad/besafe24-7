@@ -12,11 +12,11 @@ export function ServicePage({ service }: { service: Service }) {
 
   return (
     <div>
-      <section className="mesh text-cream-50">
+      <section className="mesh">
         <div className="mx-auto max-w-7xl px-4 py-16 lg:px-6 lg:py-24">
-          <p className="text-xs font-bold uppercase tracking-[0.22em] text-ember-400">BeSafe 24-7 · Glasgow</p>
+          <p className="text-xs font-bold uppercase tracking-[0.22em] text-sea-700">BeSafe 24-7 · Glasgow</p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl leading-tight md:text-6xl">{service.hero}</h1>
-          <p className="mt-5 max-w-2xl text-lg text-cream-200/90">{service.intro}</p>
+          <p className="mt-5 max-w-2xl text-lg text-ink-700">{service.intro}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href={`tel:${site.phoneHref}`} className="btn-ember">
               Call {site.phone}
@@ -62,15 +62,15 @@ export function ServicePage({ service }: { service: Service }) {
         </div>
       </section>
 
-      <section className="bg-ink-900 text-cream-50">
+      <section className="bg-sea-50">
         <div className="mx-auto max-w-7xl px-4 py-16 lg:px-6">
           <h2 className="font-display text-3xl">How the visit works</h2>
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             {service.process.map((step, i) => (
-              <article key={step.title} className="rounded-3xl border border-white/10 bg-white/5 p-6">
-                <p className="text-ember-400">0{i + 1}</p>
+              <article key={step.title} className="rounded-3xl border border-sea-800/10 bg-white p-6">
+                <p className="text-ember-500">0{i + 1}</p>
                 <h3 className="mt-2 font-display text-2xl">{step.title}</h3>
-                <p className="mt-3 text-sm text-cream-200/80">{step.body}</p>
+                <p className="mt-3 text-sm text-ink-700">{step.body}</p>
               </article>
             ))}
           </div>
